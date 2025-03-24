@@ -1,0 +1,64 @@
+.container {
+  background-color: #f8f5f3;
+  height: 110vh;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.aboutText {
+  font-size: 8vh;
+  font-family: "NohemiSemiBold";
+  padding: 10vw 14vw 10vw 14vw;
+  line-height: 1.2;
+  letter-spacing: medium;
+  display: flex;
+  text-align: justify;
+  text-align-last: right;
+  flex-wrap: wrap;
+}
+.word {
+  margin-right: 12px;
+  margin-top: 12px;
+  position: relative;
+}
+
+.shadow {
+  position: absolute;
+  opacity: 0.6;
+  color: transparent; /* Transparent fill */
+  text-shadow: 0 0 0.7vh black;
+}
+
+@media (max-width: 768px) {
+  .container {
+    min-height: 90vh; /* Ensure full height on mobile */
+  }
+
+  .aboutText {
+    font-size: 4.8vh; /* Smaller font for mobile */
+    padding: 30px; /* Much less padding on mobile */
+  }
+
+  .word {
+    margin-right: 8px; /* Slightly less spacing between words */
+    margin-top: 8px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    min-height: 95vh; /* Slightly adjusted for tablet height */
+  }
+
+  .aboutText {
+    font-size: 4.5vh; /* Slightly larger font for tablets */
+    padding: 40px; /* Moderate padding for comfortable spacing */
+  }
+
+  .word {
+    margin-right: 10px; /* Balanced spacing for tablet layout */
+    margin-top: 10px;
+  }
+}

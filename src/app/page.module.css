@@ -1,0 +1,12 @@
+.main {
+  background-color: #f8f5f3;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .main {
+    max-width: 768px;
+  }
+}

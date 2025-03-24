@@ -1,0 +1,120 @@
+.container {
+  position: relative;
+  background-color: #f8f5f3;
+  height: 130vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.titleDiv {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "NohemiThin";
+  font-size: 4.5vh;
+  margin-top: 4vh;
+  margin-bottom: 1vh;
+}
+
+.skillsContainer {
+  width: 80vw;
+  height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.skillItem {
+  background-color: black;
+
+  padding: 1vw;
+  color: #f8f5f3;
+  margin: 2.2vw;
+  font-family: "NohemiThin";
+  letter-spacing: 0.05em;
+  border-radius: 100vw / 1000%;
+  height: 6vh;
+  width: 9.5vw;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  box-shadow: 0 0 1.5vw 1.5vw rgba(0, 0, 0, 1);
+  font-size: 1.6vw;
+}
+
+.skillItem:hover {
+  background-color: rgb(106, 222, 64);
+  box-shadow: 0 0 1.5vw 1.5vw rgb(106, 222, 64);
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .container {
+    justify-content: flex-start;
+    height: 100vh;
+    margin-top: 10vh;
+  }
+  .skillItem {
+    width: 30vw;
+    height: 4vh;
+    box-shadow: 0 0 3vw 1.5vw rgba(0, 0, 0, 1);
+    border-radius: 100vw / 900%; /* Creates the pointy oval (almond) shape */
+    font-size: 1.8vh;
+    margin: 3vw;
+  }
+
+  .skillsContainer {
+    width: 80vw;
+  }
+
+  .titleDiv {
+    display: flex;
+    height: 6vh;
+    align-items: center;
+    justify-content: center;
+    font-family: "NohemiThin";
+    font-size: 3.5vh;
+    margin-top: 5vh;
+    margin-bottom: 2.5vh;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    justify-content: flex-start;
+    margin-top: 10vh;
+    height: 70vh;
+  }
+
+  .skillItem {
+    width: 20vw; /* Wider for better spacing */
+    height: 5vh;
+    box-shadow: 0 0 2.5vw 1.2vw rgba(0, 0, 0, 1);
+    border-radius: 100vw / 900%;
+    font-size: 2vh;
+    margin: 2.5vw; /* Increased margin for improved spacing */
+  }
+
+  .skillsContainer {
+    width: 75vw; /* Wider for improved layout */
+
+    justify-content: flex-start;
+  }
+
+  .titleDiv {
+    display: flex;
+    height: 7vh;
+    align-items: center;
+    justify-content: center;
+    font-family: "NohemiThin";
+    font-size: 4vh;
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+  }
+}

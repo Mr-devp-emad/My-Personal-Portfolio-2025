@@ -1,0 +1,106 @@
+.container {
+  position: relative;
+  background-color: #f8f5f3;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10vh;
+  flex-direction: column;
+}
+
+.titleContainer {
+  font-family: "NohemiThin";
+  margin-bottom: 4vh;
+  font-size: 4vh;
+}
+
+.textContainer {
+  width: 90vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
+  font-family: "NohemiLight";
+  line-height: 2.8vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.9vh;
+  text-align: justify;
+}
+
+.textHalf {
+  width: 35%;
+  height: 100%;
+  padding: 0vh 2.3vh 0vh 2.3vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.textSection {
+  padding: 1.3vh 0vh 1.3vh 0vh;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    height: 150vh;
+    flex-direction: column;
+    overflow: hidden;
+    margin-bottom: 10vh;
+  }
+
+  .titleContainer {
+    font-size: 3vh;
+    margin-bottom: 0vh;
+  }
+
+  .textContainer {
+    width: 90vw;
+    height: auto;
+    font-size: 2vh;
+    line-height: 3vh;
+    flex-direction: column;
+  }
+
+  .textHalf {
+    width: 100%;
+    padding: 1vh;
+    align-items: center;
+  }
+
+  .textSection {
+    padding: 1vh 0;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    height: 150vh;
+    overflow: hidden;
+  }
+
+  .titleContainer {
+    font-size: 3vh;
+    margin-bottom: 12vh;
+  }
+
+  .textContainer {
+    width: 80vw;
+    height: 70vh;
+    font-size: 2vh;
+    line-height: 2.5vh;
+    flex-direction: column;
+  }
+
+  .textHalf {
+    width: 100%;
+    padding: 1.5vh 2vh;
+    align-items: center;
+  }
+
+  .textSection {
+    padding: 1vh 0;
+  }
+}

@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: rgb(0, 0, 0) #f8f5f3; /* Firefox */
+}
+
+body {
+  width: 100%;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@font-face {
+  font-family: NohemiLight;
+  src: url("/Nohemi/Nohemi-Light.ttf");
+}
+
+@font-face {
+  font-family: NohemiRegular;
+  src: url("/Nohemi/Nohemi-Regular.ttf");
+}
+
+@font-face {
+  font-family: NohemiSemiBold;
+  src: url("/Nohemi/Nohemi-SemiBold.ttf");
+}
+@font-face {
+  font-family: NohemiThin;
+  src: url("/Nohemi/Nohemi-Thin.ttf");
+}
+
+@font-face {
+  font-family: NohemiBlack;
+  src: url("/Nohemi/Nohemi-Black.ttf");
+}
+
+@font-face {
+  font-family: Humane;
+  src: url("/Humane-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Archivo;
+  src: url("/ArchivoNarrow.ttf") format("truetype");
+}
+
+@media (max-width: 768px) {
+  main {
+    max-width: 768px;
+  }
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+}
